@@ -2,6 +2,8 @@
 
 Discover what command/arguments correspond to shortcuts
 
+**I started this but quickly realized the depth of the scope. I am considering this abandoned for now.**
+
 ## Getting Started
 ### Installation
 This package is available under `what-shortcut` inside of [Package Control][], a [Sublime Text][] plugin that allows for easy management of other plugins.
