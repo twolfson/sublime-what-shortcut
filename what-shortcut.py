@@ -11,9 +11,9 @@ class WhatShortcutCommand(sublime_plugin.WindowCommand):
         Example: Packages/User/Default (Linux).sublime-keymap
         """
         package_dir = sublime.packages_path()
-        platform = sublime.platform()
+        platform = sublime.platform().title()
         keymap_glob = os.path.join(package_dir,
-                                   '**/Default ({}).sublime-snippet'.format(platform))
+                                   '**/Default (%s).sublime-keymap' % platform)
         keymaps = glob.glob(keymap_glob)
         return keymaps
 
